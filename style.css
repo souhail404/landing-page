@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'noto kufi arabic' ,sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    min-width: 280px;
+    max-width: 1400px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+/* -------------------------------------------------------------------------- */
+/* NAVIGATION BAR STYLING */
+
+nav{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    
+}
+nav .nav-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 0;
+    background-color: #000000;
+    box-shadow:  0px 5px 5px rgba(0, 0, 0, 0.305);
+}
+nav .nav-container .nav-bar{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav .nav-container .nav-bar .bar-txt{
+     color: #ffffff;
+     font-size: 1rem;
+     font-weight: 700;
+     font-family: 'El Messiri';
+}
+
+/* NAVIGATION BAR STYLING ENDS */
+/* ---------------------------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* MAIN SECTION STYLING START */
+.main{
+    width: 100%;
+    position: relative;
+    padding-top:50px ;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main .main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main .main-container .main-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main .main-container .main-header .header-txt{
+    font-size: 1.1rem;
+    color: red;
+    font-weight: 700;
+    animation: sign 1s infinite;
+}
+.main .main-container .left-right{
+    width: 100%;
+    padding: 0 10px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main .main-container .left-right .l{
+    width: 48%;
+    padding-right: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+.main .main-container .left-right .l .title{
+    font-size: 2.7rem;
+    font-family: 'El Messiri';
+    
+}
+.main .main-container .left-right .l .price .fake-price{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: line-through;
+    margin-right: 10px;
+    font-family: 'poppins' ,sans-serif;
+    color: #585858;
+}
+.main .main-container .left-right .l .price .real-price{
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'poppins' ,sans-serif;
+    color: #42628f;
+}
+.main .main-container .left-right .btn{
+    margin-top: 50px;
+} 
+.main .main-container .left-right .order-btn{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1px 90px;
+    background-color: #42628f;
+    color: black;
+    margin-top: 50px;
+    border-radius: 6px;
+    border: solid 2px transparent;
+    box-shadow: -5px 5px 5px #868686;
+}
+.main .main-container .left-right .order-btn:hover{
+    background-color: transparent;
+    border: solid 2px #35527c;
+    color: #35527c;
+}
+.main .main-container .left-right .r{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.main .main-container .left-right .r img{
+    width: 460px;
+}
+
+
+@media (max-width:1090px) {
+    .main .main-container .left-right .l{
+        padding-right: 0%;
+    }
+    .main .main-container .left-right .r img{
+        width: 450px;
+    }
+}
+@media (max-width:955px) {
+    
+    .main .main-container .left-right .r img{
+        width: 430px;
+    }
+    .main .main-container .left-right .l .title{
+        font-size: 2.3rem;     
+    }
+    .main .main-container .left-right .l .price .fake-price{
+        font-size: 1.1rem;
+    }
+    .main .main-container .left-right .l .price .real-price{
+        font-size: 1.7rem;
+    }
+    .main .main-container .left-right .order-btn{
+        font-size: 1.2rem;
+        padding: 1px 90px;
+    }
+}
+@media (max-width:850px) {
+    
+    .main .main-container .left-right .r img{
+        width: 380px;
+    }
+    .main .main-container .left-right .l .title{
+        font-size: 2rem;     
+    }
+    .main .main-container .left-right .l .price .fake-price{
+        font-size: 1.1rem;
+    }
+    .main .main-container .left-right .l .price .real-price{
+        font-size: 1.5rem;
+    }
+    .main .main-container .left-right .btn{
+        margin-top: 30px;
+    }
+    .main .main-container .left-right .order-btn{
+        font-size: 1.1rem;
+        padding: 0px 90px;
+        margin-top: 30px;
+    }
+}
+@media (max-width:750px) {
+    
+    .main .main-container .left-right .r img{
+        width: 320px;
+    }
+    .main .main-container .left-right .l .title{
+        font-size: 1.6rem;     
+    }
+    .main .main-container .left-right .l .price .fake-price{
+        font-size: 1.05rem;
+    }
+    .main .main-container .left-right .l .price .real-price{
+        font-size: 1.3rem;
+    }
+    .main .main-container .left-right .l .desc{
+        font-size: 0.85rem;
+    }
+    .main .main-container .left-right .order-btn{
+        font-size: 1.1rem;
+        padding: 0px 75x;
+        margin-top: 30px;
+    }
+}
+@media (max-width:635px) {
+    .main{
+        background-color: #cddef8;
+    }
+    .main .main-container .left-right{
+        width: 100%;
+        padding: 0 10px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .main .main-container .left-right .l{
+        width: 100%;
+        padding-right: 0;
+        padding: 0 10px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: end;
+    }
+    .main .main-container .left-right .l .title{
+        font-size: 2rem;
+        font-family: 'El Messiri';
+        
+    }
+    .main .main-container .left-right .l .price{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+    }
+    .main .main-container .left-right .l .price .fake-price{
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-decoration: line-through;
+        margin-right: 10px;
+        font-family: 'poppins' ,sans-serif;
+        color: #585858;
+    }
+    .main .main-container .left-right .l .price .real-price{
+        font-size: 1.8rem;
+        font-weight: 700;
+        font-family: 'poppins' ,sans-serif;
+        color: #42628f;
+    }
+    .main .main-container .left-right .btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .main .main-container .left-right .order-btn{
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 0px 80px;
+        background-color: #42628f;
+        color: black;
+        margin-top: 0px;
+        border-radius: 6px;
+        border: solid 2px transparent;
+        box-shadow: -5px 5px 5px #868686;
+    }
+    .main .main-container .left-right .order-btn:hover{
+        background-color: transparent;
+        border: solid 2px #35527c;
+        color: #35527c;
+    }
+    .main .main-container .left-right .r{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0 10px;
+    }
+    .main .main-container .left-right .r img{
+        width: 100%;
+    }
+    
+}
+@media (max-width:375px) {
+    
+    .main .main-container .left-right .l .title{
+        font-size: 1.8rem;     
+    }
+    .main .main-container .left-right .l .price .fake-price{
+        font-size: 1.05rem;
+    }
+    .main .main-container .left-right .l .price .real-price{
+        font-size: 1.3rem;
+    }
+    .main .main-container .left-right .l .desc{
+        font-size: 0.9rem;
+    }
+    .main .main-container .left-right .order-btn{
+        font-size: 1rem;
+        padding: 0px 75x;
+        margin-top: 10px;
+    }
+}
+@media (max-width:350px) {
+    .main .main-container .left-right .l{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .main .main-container .left-right .r{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .main .main-container .left-right .l .title{
+        font-size: 1.55rem;     
+    }
+    .main .main-container .left-right .l .price .fake-price{
+        font-size: 1.05rem;
+    }
+    .main .main-container .left-right .l .price .real-price{
+        font-size: 1.4rem;
+    }
+    .main .main-container .left-right .l .desc{
+        font-size: 0.85rem;
+    }
+    .main .main-container .left-right .order-btn{
+        font-size: 1rem;
+        padding: 0px 75x;
+        margin-top: 10px;
+    }
+    nav .nav-container .nav-bar .bar-txt{
+        font-size: 0.9rem;
+   }
+}
+
+@keyframes sign {
+    0%{
+        color: red;
+    }
+    20%{
+        color: red;
+    }
+    40%{
+        color: transparent;
+    }
+    60%{
+        color: transparent;
+    } 
+    80%{
+        color: red;
+    }
+    100%{
+        color: red;
+    }
+}
+
+/* MAIN SECTION STYLING ENDS */
+/* ---------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------- */
+/* DESCRIPTION SECTION STYLING START */
+.description{
+    width: 100%;
+    position: relative;
+    padding-top:50px ;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description .description-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.description .description-container .waves{
+    position: absolute;
+    top: -3px;
+    display: none;
+}
+.description-container .description-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.description .description-container .description-header .header-txt{
+    font-size: 2.3rem;
+    font-weight: 700;
+    font-family: 'El Messiri';
+}
+.description .description-container .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+}
+.description .description-container .content .line{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+    margin-top: 30px;
+}
+.description .description-container .content .line .btn{
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.description .description-container .content .line .btn .order-btn{
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 1px 90px;
+    background-color: #42628f;
+    color: black;
+    margin-top: 0px;
+    border-radius: 6px;
+    border: solid 2px transparent;
+    box-shadow: -5px 5px 5px #868686;
+}
+
+.description .description-container .content .line .btn .order-btn:hover{
+    background-color: transparent;
+    border: solid 2px #35527c;
+    color: #35527c;
+}
+.description .description-container .content .line img{
+    width: 400px;
+    margin-top: 20px;
+}
+@media (max-width:500px) {
+    .description .description-container .content .line{
+        width: 95%;
+        padding: 0 0px;
+    }
+    .description .description-container .content .line img{
+        width:80%;
+    }
+}
+@media (max-width:450px) {
+    .description .description-container .content .line{
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .description .description-container .content .line img{
+        width:90%;
+    }
+}
+@media (max-width:400px) {
+    
+    .description .description-container .content .line .btn .order-btn{
+        font-size: 1rem;
+        padding: 0px 70x;
+    }
+}
+@media (max-width:635px) {
+    .description .description-container .waves{
+        position: absolute;
+        top: -3px;
+        display: flex;
+    }
+    .description{
+        background-color: #edf3fc;
+    }
+    .description .description-container .description-header .header-txt{
+        font-size: 1.65rem;
+    }
+}
+
+/* DESCRIPTION SECTION STYLING END */
+/* ---------------------------------------------------------------- */
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* DELIVERY SECTION STYLING START */
+.delivery{
+    width: 100%;
+    position: relative;
+    padding-top:90px ;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.delivery .delivery-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.delivery .delivery-container .waves{
+    position: absolute;
+    top: -3px;
+    display: none;
+}
+.delivery-container .delivery-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.delivery .delivery-container .delivery-header .header-txt{
+    font-size: 2.3rem;
+    font-weight: 700;
+    font-family: 'El Messiri';
+}
+.delivery .delivery-container .content{
+    width:100%;
+    display: flex;
+}
+.delivery .delivery-container .content .steps{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.delivery .delivery-container .content .steps img{
+    width:75%;
+}
+@media (max-width:635px) {
+    .delivery .delivery-container .waves{
+        position: absolute;
+        top: -3px;
+        display: flex;
+    }
+    .delivery .delivery-container .content .steps img{
+        width:100%;
+    }
+    .delivery .delivery-container .delivery-header .header-txt{
+        font-size: 1.55rem;
+    }
+}
+/* DELIVERY SECTION STYLING END */
+/* ---------------------------------------------------------------- */
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* REVIEWS SECTION STYLING START */
+.reviews{
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 40px;
+
+}
+.reviews .reviews-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.reviews .reviews-header .header-txt{
+    font-size: 2.3rem;
+    font-weight: 700;
+    font-family: 'El Messiri';
+}
+.reviews .reviews-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+}
+.reviews .reviews-container .rev{
+    width: 30%;
+    height: 230px;
+    min-width: 300px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: rgb(233, 233, 233);
+    margin-bottom: 20px;
+    padding: 10px;
+    position: relative;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.reviews .reviews-container .rev .date{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    font-size: 0.85rem;
+}
+@media (max-width:989px) {
+    .reviews .reviews-container .rev{
+        width: 45%;
+        height: 210px;
+        min-width: 300px;
+    }
+}
+@media (max-width:659px) {    
+    .reviews .reviews-container .rev{
+        width: 90%;
+        height: 190px;
+        min-width: 300px;
+    }
+}
+@media (max-width:400px){
+    .reviews .reviews-container .rev{
+        font-size: 0.9rem;
+        margin: 0;
+        margin-bottom: 20px;
+        min-width: 260px;
+        height: 180px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.322);
+    }
+    .reviews .reviews-container .rev .date{
+        position: absolute;
+        left: 5px;
+        bottom: 5px;
+        font-size: 0.85rem;
+    }
+}
+@media (max-width:635px){
+
+    .reviews .reviews-header .header-txt{
+        font-size: 1.55rem;
+    }
+}
+/* REVIEWS SECTION STYLING END */
+/* ---------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+/* FOOTER STYLING START */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    background-color: #42628f;
+    color: white;
+}
+footer p a{
+    color: white;
+    text-decoration: underline ;
+}
+/* FOOTER STYLING END */
+/* ---------------------------------------------------------------- */
